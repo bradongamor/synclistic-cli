@@ -1,0 +1,48 @@
+{
+  "name": "synclistic",
+  "version": "1.0.0",
+  "description": "Command-line interface for syncing, exporting, and importing Shopify store content",
+  "main": "lib/index.js",
+  "bin": {
+    "synclistic": "bin/synclistic.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradongamor/synclistic-cli.git"
+  },
+  "homepage": "https://github.com/bradongamor/synclistic-cli#readme",
+  "bugs": {
+    "url": "https://github.com/bradongamor/synclistic-cli/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "bundleDependencies": [
+    "@synclistic/shopify-client",
+    "@synclistic/sync-core",
+    "@synclistic/types"
+  ],
+  "scripts": {
+    "start": "node ./bin/synclistic.js",
+    "smoke": "node ./bin/synclistic-smoke.js"
+  },
+  "dependencies": {
+    "@napi-rs/keyring": "^1.2.0",
+    "@synclistic/shopify-client": "^1.0.0",
+    "@synclistic/sync-core": "^1.0.0",
+    "@synclistic/types": "^1.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "commander": "^8.3.0",
+    "form-data": "^4.0.0",
+    "inquirer": "^8.2.0",
+    "validator": "^13.7.0"
+  }
+}
